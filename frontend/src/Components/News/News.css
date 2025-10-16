@@ -1,0 +1,153 @@
+/* General section styling */
+.news-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.news-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Empty / loading state */
+.news-empty {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* News grid layout */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* News card */
+.news-card {
+  display: flex;
+  gap: 15px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon styling */
+.news-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* News content */
+.news-content {
+  flex: 1;
+}
+
+.news-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Badge colors */
+.news-badge.alert {
+  background-color: #ff4d4f;
+}
+
+.news-badge.rain {
+  background-color: #1890ff;
+}
+
+.news-badge.sunny {
+  background-color: #fadb14;
+  color: #000;
+}
+
+.news-badge.wind {
+  background-color: #73d13d;
+}
+
+.news-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.news-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.news-readmore {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.news-readmore:hover {
+  text-decoration: underline;
+}
+
+/* Fade in animation for cards */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .news-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-icon {
+    margin-bottom: 10px;
+  }
+
+  .news-content {
+    width: 100%;
+  }
+}

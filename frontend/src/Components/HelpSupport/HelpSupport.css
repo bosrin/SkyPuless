@@ -1,0 +1,89 @@
+.help-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.help-title {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary, #333);
+  justify-content: center;
+}
+
+.help-subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary, #666);
+}
+
+.help-section {
+  margin-bottom: 2rem;
+}
+
+.help-section h2 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color, #007bff);
+}
+
+.faq-list li {
+  background: var(--faq-bg, #f9f9f9);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.help-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.help-form input,
+.help-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.help-form input:focus,
+.help-form textarea:focus {
+  border-color: var(--accent-color, #007bff);
+}
+
+.help-submit {
+  background: var(--accent-color, #007bff);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.help-submit:hover {
+  background: #0059c9;
+}
+
+.thankyou-text {
+  color: green;
+  font-weight: 500;
+}
+
+.guide-list li {
+  margin-bottom: 0.6rem;
+}
